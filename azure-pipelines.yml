@@ -24,6 +24,6 @@ steps:
 
   - task: PublishBuildArtifacts@1
     inputs:
-      PathtoPublish: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      PathtoPublish: '$(System.DefaultWorkingDirectory)/bin/Debug/net5.0/publish/*.zip'
       ArtifactName: 'drop'
       publishLocation: 'Container'
