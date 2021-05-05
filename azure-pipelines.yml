@@ -21,10 +21,3 @@ steps:
     inputs:
       command: 'publish'
       publishWebProjects: true
-  - task: AzureRmWebAppDeployment@4
-    inputs:
-      ConnectionType: 'AzureRM'
-      azureSubscription: 'Default(c8212d6e-91c5-49ec-a30a-69b18a279fca)'
-      appType: 'webApp'
-      WebAppName: 'backenddevopslesson'
-      packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
